@@ -1,0 +1,116 @@
+{
+	"id": "86173f43-14bb-4dcf-9d20-33baf4004a58",
+	"name": "Postman-Collection-Sprint_Boot_With_Derby_In-Memory",
+	"description": "Postman Collection of Sprint Boot With Derby In-Memory application",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"928f454b-a2d0-43bc-8e81-1a1162d83349",
+		"4458afc0-7090-4dcf-b097-242b5b373a76",
+		"f95c4036-cd4c-46cf-97af-d7b24cc6278d",
+		"bd2b0c28-26a0-4919-a564-b9de8e6aa559",
+		"178b0790-6354-4ac5-9fc8-417d78f5a517"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "178b0790-6354-4ac5-9fc8-417d78f5a517",
+			"name": "Delete Student",
+			"url": "http://localhost:8080/students/1",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "4458afc0-7090-4dcf-b097-242b5b373a76",
+			"name": "Get All Students",
+			"url": "http://localhost:8080/students",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "928f454b-a2d0-43bc-8e81-1a1162d83349",
+			"name": "Create New Student",
+			"url": "http://localhost:8080/students",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"firstName\": \"MyFirstName\",\n\t\"lastName\": \"MyLastName\",\n\t\"mobile\": \"1234567890\",\n\t\"email\": \"my@gmail.com\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "bd2b0c28-26a0-4919-a564-b9de8e6aa559",
+			"name": "Update Student Details",
+			"url": "http://localhost:8080/students/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "PATCH",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"firstName\": \"MyFirstName1\",\n\t\"lastName\": \"MyLastName1\",\n\t\"email\": \"my1@gmail.com\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f95c4036-cd4c-46cf-97af-d7b24cc6278d",
+			"name": "Get Student",
+			"url": "http://localhost:8080/students/1",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}
